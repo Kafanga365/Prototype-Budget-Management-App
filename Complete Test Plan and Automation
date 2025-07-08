@@ -15,4 +15,4 @@ This test plan outlines the core system-level test cases that ensure the functio
 | TC009       | UI testing across Android and iOS                | UI               | Open app on both OS                                    | UI renders correctly, buttons functional                | Pass    |
 | TC010       | Set savings goal higher than income              | Validation       | Goal = £1,000; income = £600                           | Warning: “Goal exceeds available income”                | Pass    |
 
->  All test cases have passed based on internal simulation and functional validation.
+>  All test cases have passed based on internal simulation and functional validation. 
