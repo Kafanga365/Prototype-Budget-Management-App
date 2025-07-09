@@ -76,6 +76,12 @@ flutter test
 ### Running on iPhone 12 Pro
 ![iPhone Device](screenshots/iphone_device.png)
 
+## Demo Video
+
+A short demo (3–5 minutes) showcasing the features and usage of BudgetApp is available here:
+
+[Watch Demo](https://drive.google.com/file/d/1ltNJLemA3ZQwhWfUC8AfGSWIQmFA8UYm/view?usp=share_link)
+
 ## Author
 
 Will Kafanga
