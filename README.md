@@ -1,81 +1,81 @@
-# budget_app
+# Project Documentation: BudgetApp
 
-A new Flutter project.
+## Overview
 
-## Getting Started
+BudgetApp is a cross-platform expense tracking application built using Flutter. It allows users to add, view, and delete daily expenses with category labels and descriptions. Data is stored locally using the Hive database.
 
-This project is a starting point for a Flutter application.
+## Technology Stack
 
-A few resources to get you started if this is your first Flutter project:
+- **Framework**: Flutter (Dart)
+- **Local Storage**: Hive
+- **IDE**: Visual Studio Code, Xcode
+- **Platforms Tested**:
+  - Chrome (Web)
+  - iPhone 12 Pro (Physical Device)
+  - iPad Pro (iOS Simulator)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Directory Structure
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+budget_app/
+├── lib/
+│   ├── models/
+│   │   └── expense.dart
+│   ├── screens/
+│   │   └── expense_list_screen.dart
+│   └── services/
+│       └── hive_service.dart
+├── test/
+│   ├── expense_list_screen_test.dart
+│   └── widget_test.dart
+├── ios/
+├── android/
+├── web/
+└── README.md
+```
 
-# BudgetApp
+## Testing
 
-BudgetApp is a Flutter-based mobile and web application that helps users manage and track their daily expenses efficiently.
+### Test Types
+- **Widget Tests**: Validate UI rendering and element presence
+- **Integration Tests**: Simulate user interactions (future implementation)
 
-## Features
+### Running Tests
+```bash
+flutter test
+```
 
-- Add, view, and delete expenses
-- Categorize expenses and include descriptions
-- Data persistence using Hive (local NoSQL storage)
-- Responsive layout for web and mobile
-- Platform-tested: Chrome, iPhone 12 Pro, and iPad Pro simulator
+## iOS Deployment Notes
 
-## Getting Started
+- Tested using Xcode simulator and real device (iPhone 12 Pro).
+- Automatic signing and Apple developer account setup required.
+- App verified through device settings after building.
 
-### Prerequisites
+## Git & GitHub
 
-- [Flutter SDK](https://flutter.dev/docs/get-started/install)
-- An IDE such as [VS Code](https://code.visualstudio.com/) or [Android Studio](https://developer.android.com/studio)
-- (For iOS) Xcode with a connected device or simulator
+- Main development occurs in the `main` branch.
+- Features and documentation updates are pushed to separate branches like `ReadMeUpdate`.
+- Pull requests used to merge into `main`.
 
-### Installation
+## Known Issues
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Kafanga365/Prototype-Budget-Management-App.git
-   cd Prototype-Budget-Management-App
-   ```
+- Hive test box conflicts during multiple test file runs.
+- Platform plugin initialization during testing may need stubbing/mocking.
 
-2. Install dependencies:
-   ```bash
-   flutter pub get
-   ```
+## Screenshots
 
-3. (Optional for iOS) Precache iOS artifacts:
-   ```bash
-   flutter precache --ios
-   ```
+### Home Screen
+![Home Screen](screenshots/home_screen.png)
 
-### Running the App
+### Add Expense Screen
+![Add Expense](screenshots/add_expense_screen.png)
 
-- On Chrome:
-  ```bash
-  flutter run -d chrome
-  ```
+### Running on iOS Simulator
+![iOS Simulator](screenshots/ios_simulator.png)
 
-- On iOS Simulator or Device:
-  ```bash
-  flutter run -d <your_ios_device_id>
-  ```
+### Running on iPhone 12 Pro
+![iPhone Device](screenshots/iphone_device.png)
 
-## Running Tests
+## Author
 
-- To run all unit and widget tests:
-  ```bash
-  flutter test
-  ```
-
-## Contributing
-
-Contributions are welcome. Please fork the repo and submit a pull request.
-
-## License
-
-This project is licensed under the MIT License.
+Will Kafanga
