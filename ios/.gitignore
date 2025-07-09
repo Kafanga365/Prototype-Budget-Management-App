@@ -32,3 +32,16 @@ Runner/GeneratedPluginRegistrant.*
 !default.mode2v3
 !default.pbxuser
 !default.perspectivev3
+
+# Flutter/Dart/VS Code
+.dart_tool/
+.idea/
+.vscode/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter-versions
+.DS_Store
+.metadata
+*.iml
